@@ -8540,7 +8540,7 @@ v16.Misc:AddButton({
     end
 });
 v16.Misc:AddButton({
-    Title = "Äá»•i MÃ¡y Chá»§",
+    Title = "Change Servidor",
     Description = "",
     Callback = function()
         Hop();
@@ -8607,14 +8607,14 @@ function Hop()
 end
 local v56 = v16.Misc:AddSection("Äá»™i");
 v16.Misc:AddButton({
-    Title = "Háº£i Táº·c",
+    Title = "Pirates",
     Description = "",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetTeam", "Pirates");
     end
 });
 v16.Misc:AddButton({
-    Title = "Háº£i QuÃ¢n",
+    Title = "Marines",
     Description = "",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetTeam", "Marines");
@@ -8667,7 +8667,7 @@ local v150 = {
     "SECRET_ADMIN"
 };
 v16.Misc:AddButton({
-    Title = "Nháº­p Háº¿t",
+    Title = "Insert All Codes",
     Description = "",
     Callback = function()
         for v559, v560 in ipairs(v150) do
@@ -8680,7 +8680,7 @@ function RedeemCode(v377)
 end
 local v56 = v16.Misc:AddSection("Danh Hiá»‡u");
 v16.Misc:AddButton({
-    Title = "Danh Hiá»‡u",
+    Title = "Title",
     Description = "",
     Callback = function()
         local v378 = {
@@ -8692,7 +8692,7 @@ v16.Misc:AddButton({
 });
 local v56 = v16.Misc:AddSection("Thá»©c Tá»‰nh");
 v16.Misc:AddButton({
-    Title = "Thá»©c Tá»‰nh",
+    Title = "Awaken",
     Description = "",
     Callback = function()
         game:GetService("Players").LocalPlayer.PlayerGui.Main.AwakeningToggler.Visible = true;
@@ -8700,7 +8700,7 @@ v16.Misc:AddButton({
 });
 local v56 = v16.Misc:AddSection("KhÃ¡c");
 local v151 = v16.Misc:AddToggle("ToggleRejoin", {
-    Title = "Tham Gia MÃ¡y Chá»§ Láº¡i",
+    Title = "Rejoin",
     Description = "",
     Default = true
 });
@@ -8740,14 +8740,14 @@ local function v152()
     v382.FogEnd = 100000;
 end
 v16.Misc:AddButton({
-    Title = "XÃ³a SÆ°Æ¡ng MÃ¹",
+    Title = "Remove Fog",
     Description = "",
     Callback = function()
         v152();
     end
 });
 local v153 = v16.Misc:AddToggle("ToggleAntiBand", {
-    Title = "Chá»‘ng Band",
+    Title = "Anti-Ban",
     Description = "",
     Default = true
 });
@@ -8772,14 +8772,14 @@ spawn(function()
 end);
 local v56 = v16.Sea:AddSection("Leviathan");
 v16.Sea:AddButton({
-    Title = "Mua Chip Leviathan",
+    Title = "Buy Chip Leviathan",
     Description = "",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("InfoLeviathan", "2");
     end
 });
 local v155 = v16.Sea:AddToggle("ToggleTPFrozenDimension", {
-    Title = "Bay Äáº¿n Äáº£o Leviathan",
+    Title = "Fly to Leviathan Island",
     Description = "",
     Default = false
 });
@@ -8803,7 +8803,7 @@ spawn(function()
 end);
 if Sea3 then
     local v561 = v16.Sea:AddParagraph({
-        Title = "Tráº¡ng ThÃ¡i Chip Leviathan",
+        Title = "Stats Leviathan",
         Content = ""
     });
     spawn(function()
@@ -8823,7 +8823,7 @@ if Sea3 then
 end
 local v156 = v16.Sea:AddSection("Draco");
 local v157 = v16.Sea:AddToggle("ToggleBlazeEmber", {
-    Title = "Lá»¥m Lá»­a Äá»",
+    Title = "Collect Blaze Ember",
     Description = "",
     Default = false
 });
@@ -8840,7 +8840,7 @@ spawn(function()
     end
 end);
 local v158 = v16.Sea:AddToggle("ToggleReceiveQuest", {
-    Title = "Nháº­n Nhiá»‡m Vá»¥ Lá»­a Äá»",
+    Title = "Accept Blaze Ember Mission",
     Description = "Báº­t LÃªn 1 Láº§n LÃ  Nháº­n 1 Nháº­n Ná»¯a ThÃ¬ Táº¯t Báº­t Láº¡i",
     Default = false
 });
@@ -8870,7 +8870,7 @@ v158:OnChanged(function(v388)
     end
 end);
 local v159 = v16.Sea:AddParagraph({
-    Title = "Tráº¡ng ThÃ¡i Nhiá»‡m Vá»¥ Lá»­a Äá»",
+    Title = "Stats Blaze Ember Mission",
     Content = ""
 });
 spawn(function()
@@ -8899,7 +8899,7 @@ spawn(function()
     end);
 end);
 local v160 = v16.Sea:AddToggle("ToggleHydraTree", {
-    Title = "PhÃ¡ CÃ¢y á»ž Äáº£o Hydra",
+    Title = "Destroy Tree In Hydra",
     Description = "",
     Default = false
 });
@@ -8965,7 +8965,7 @@ spawn(function()
     end
 end);
 v156:AddButton({
-    Title = "Bay Äáº¿n Khu Vá»±c Dragon Dojo",
+    Title = "Fly To Dragon Dojo Area",
     Description = "",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance", Vector3.new(5661.5322265625, 1013.0907592773438, - 334.9649963378906));
@@ -8973,7 +8973,7 @@ v156:AddButton({
     end
 });
 v156:AddButton({
-    Title = "Cháº¿ Táº¡o Volcanic Magnet",
+    Title = "Create Volcanic Magnet",
     Description = "",
     Callback = function()
         local v395 = {
@@ -8985,7 +8985,7 @@ v156:AddButton({
     end
 });
 local v164 = v16.Sea:AddToggle("ToggleCollectFireFlowers", {
-    Title = "Lá»¥m Hoa Äá»",
+    Title = "Collect Fire Flower",
     Description = "",
     Default = false
 });
@@ -9016,7 +9016,7 @@ spawn(function()
     end
 end);
 local v165 = v16.Sea:AddToggle("ToggleWhiteBelt", {
-    Title = "CÃ y Äai Tráº¯ng",
+    Title = "Farm White Belt",
     Description = "",
     Default = false
 });
@@ -9045,11 +9045,11 @@ v165:OnChanged(function(v397)
     end
 end);
 local v166 = v16.Sea:AddParagraph({
-    Title = "HoÃ n ThÃ nh áº¢i Draco V4 (Sá»›m Ra)",
+    Title = "Complete To Draco V4 (Soon)",
     Content = ""
 });
 local v167 = v16.Sea:AddToggle("ToggleTrialTeleport", {
-    Title = "Bay Äáº¿n Cá»­a Trial Tá»™c Draco",
+    Title = "Fly To Draco Trial",
     Description = "",
     Default = false
 });
@@ -9068,7 +9068,7 @@ spawn(function()
 end);
 local v168 = v16.Sea:AddSection("Äáº£o Dung Nham");
 local v169 = v16.Sea:AddParagraph({
-    Title = "Tráº¡ng ThÃ¡i Äáº£o Dung Nham",
+    Title = "Stats Lava Island",
     Content = ""
 });
 spawn(function()
@@ -9083,7 +9083,7 @@ spawn(function()
     end);
 end);
 local v170 = v16.Sea:AddToggle("ToggleTPVolcano", {
-    Title = "Bay Äáº¿n Äáº£o Dung Nham",
+    Title = "Fly To Lava Island",
     Description = "",
     Default = false
 });
@@ -9112,7 +9112,7 @@ spawn(function()
     end
 end);
 local v171 = v16.Sea:AddToggle("ToggleDefendVolcano", {
-    Title = "PhÃ²ng Thá»§",
+    Title = "Defense",
     Description = "",
     Default = false
 });
@@ -9120,7 +9120,7 @@ v171:OnChanged(function(v401)
     _G.AutoDefendVolcano = v401;
 end);
 local v107 = v16.Sea:AddToggle("ToggleMelee", {
-    Title = "DÃ¹ng Melee",
+    Title = "Use Melee",
     Description = "",
     Default = false
 });
@@ -9128,7 +9128,7 @@ v107:OnChanged(function(v402)
     _G.UseMelee = v402;
 end);
 local v109 = v16.Sea:AddToggle("ToggleSword", {
-    Title = "DÃ¹ng Sword",
+    Title = "Use Sword",
     Description = "",
     Default = false
 });
@@ -9136,7 +9136,7 @@ v109:OnChanged(function(v403)
     _G.UseSword = v403;
 end);
 local v110 = v16.Sea:AddToggle("ToggleGun", {
-    Title = "DÃ¹ng Gun",
+    Title = "Use Gun",
     Description = "",
     Default = false
 });
@@ -9246,7 +9246,7 @@ spawn(function()
     end
 end);
 local v175 = v16.Sea:AddToggle("ToggleKillAura", {
-    Title = "Äáº¥m Golems Aura",
+    Title = "Punch Golems Aura",
     Description = "",
     Default = false
 });
@@ -9273,7 +9273,7 @@ spawn(function()
     end
 end);
 local v176 = v16.Sea:AddToggle("ToggleCollectBone", {
-    Title = "Lá»¥m XÆ°Æ¡ng",
+    Title = "Collect Bone",
     Description = "",
     Default = false
 });
@@ -9292,7 +9292,7 @@ spawn(function()
     end
 end);
 local v177 = v16.Sea:AddToggle("ToggleCollectEgg", {
-    Title = "Lá»¥m Trá»©ng",
+    Title = "Collect Egg",
     Description = "",
     Default = false
 });
