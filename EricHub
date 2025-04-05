@@ -326,7 +326,7 @@ local v16 = {
         Title = "CÃ y"
     }),
     Sea = v15:AddTab({
-        Title = "Sá»± Kiá»‡n"
+        Title = "Sá»± Kiá»‡"
     }),
     ITM = v15:AddTab({
         Title = "Váº­t Pháº©m"
@@ -338,7 +338,7 @@ local v16 = {
         Title = "MÃ¡y Chá»§"
     }),
     Stats = v15:AddTab({
-        Title = "Chá»‰ Sá»‘"
+        Title = "Chá»‰ Sá»"
     }),
     Player = v15:AddTab({
         Title = "NgÆ°á»i ChÆ¡i"
@@ -2693,7 +2693,7 @@ spawn(function()
     end
 end);
 local v48 = v16.Main:AddDropdown("DropdownSelectWeapon", {
-    Title = "VÅ© KhÃ­",
+    Title = "Weapon­",
     Description = "",
     Values = {
         "Melee",
@@ -2739,7 +2739,7 @@ task.spawn(function()
     end
 end);
 local v49 = v16.Main:AddToggle("ToggleLevel", {
-    Title = "CÃ y Cáº¥p",
+    Title = "Farm Level",
     Description = "",
     Default = false
 });
@@ -2799,7 +2799,7 @@ spawn(function()
     end
 end);
 local v50 = v16.Main:AddToggle("ToggleMobAura", {
-    Title = "Äáº¥m QuÃ¡i Gáº§n",
+    Title = "Punch Nearby Monsters",
     Description = "",
     Default = false
 });
@@ -2845,7 +2845,7 @@ spawn(function()
     end
 end);
 local v51 = v16.Main:AddToggle("ToggleCastleRaid", {
-    Title = "Äáº¥m Háº£i Táº·c",
+    Title = "Punch Raid Pirate",
     Description = "",
     Default = false
 });
@@ -2882,7 +2882,7 @@ spawn(function()
     end
 end);
 local v52 = v16.Main:AddToggle("ToggleHakiFortress", {
-    Title = "Báº­t Haki MÃ u PhÃ¡o ÄÃ i",
+    Title = "Activate Fortress Color Haki",
     Description = "",
     Default = false
 });
@@ -2933,7 +2933,7 @@ spawn(function()
     end
 end);
 local v55 = v16.Main:AddToggle("ToggleCollectChest", {
-    Title = "Lá»¥m RÆ°Æ¡ng",
+    Title = "Collect Chest",
     Description = "",
     Default = false
 });
@@ -2967,7 +2967,7 @@ spawn(function()
 end);
 local v56 = v16.Main:AddSection("ThÃ´ng Tháº¡o");
 local v57 = v16.Main:AddDropdown("DropdownMastery", {
-    Title = "CÃ y ThÃ´ng Tháº¡o",
+    Title = "Farm Mastery",
     Description = "",
     Values = {
         "Near Mobs"
@@ -2980,7 +2980,7 @@ v57:OnChanged(function(v249)
     TypeMastery = v249;
 end);
 local v58 = v16.Main:AddToggle("ToggleMasteryFruit", {
-    Title = "CÃ y TrÃ¡i",
+    Title = "Farm Fruit",
     Description = "",
     Default = false
 });
@@ -2989,7 +2989,7 @@ v58:OnChanged(function(v250)
 end);
 v17.ToggleMasteryFruit:SetValue(false);
 local v59 = v16.Main:AddSlider("SliderHealt", {
-    Title = "MÃ¡u QuÃ¡i",
+    Title = "Monster Health",
     Description = "",
     Default = 20,
     Min = 0,
@@ -3091,7 +3091,7 @@ end);
 if Sea3 then
     local v484 = v16.Main:AddSection("XÆ°Æ¡ng");
     local v485 = v16.Main:AddParagraph({
-        Title = "XÆ°Æ¡ng Tráº¡ng ThÃ¡i",
+        Title = "Stats Bone",
         Content = ""
     });
     spawn(function()
@@ -3103,7 +3103,7 @@ if Sea3 then
         end);
     end);
     local v486 = v16.Main:AddToggle("ToggleBone", {
-        Title = "CÃ y XÆ°Æ¡ng",
+        Title = "Farm Bone",
         Description = "",
         Default = false
     });
@@ -3201,7 +3201,7 @@ if Sea3 then
         end
     end);
     v16.Main:AddButton({
-        Title = "Cáº§u Nguyá»‡n",
+        Title = "Rezar",
         Description = "",
         Callback = function()
             local v572 = {
@@ -3212,7 +3212,7 @@ if Sea3 then
         end
     });
     v16.Main:AddButton({
-        Title = "Thá»­ Váº­n May",
+        Title = "Try your luck",
         Description = "",
         Callback = function()
             local v573 = {
@@ -3223,7 +3223,7 @@ if Sea3 then
         end
     });
     local v489 = v16.Main:AddToggle("ToggleRandomBone", {
-        Title = "Random XÆ°Æ¡ng",
+        Title = "Random Bone",
         Description = "",
         Default = false
     });
@@ -3248,7 +3248,7 @@ end
 if Sea3 then
     local v490 = v16.Main:AddSection("TÆ° Lá»‡nh BÃ¡nh");
     local v491 = v16.Main:AddParagraph({
-        Title = "Tráº¡ng ThÃ¡i NÃ³ Ra",
+        Title = "Condition for him to appear",
         Content = ""
     });
     spawn(function()
@@ -3267,7 +3267,7 @@ if Sea3 then
         end
     end);
     local v492 = v16.Main:AddToggle("ToggleCake", {
-        Title = "CÃ y TÆ° Lá»‡nh BÃ¡nh",
+        Title = "Farm CakePrince",
         Description = "",
         Default = false
     });
@@ -3341,7 +3341,7 @@ if Sea3 then
         end
     end);
     local v494 = v16.Main:AddToggle("ToggleDoughKing", {
-        Title = "Äáº¥m Vua Bá»™t",
+        Title = "Farm DoughKing",
         Description = "",
         Default = false
     });
@@ -3381,7 +3381,7 @@ if Sea3 then
         end
     end);
     local v495 = v16.Main:AddToggle("ToggleSpawnCake", {
-        Title = "Triá»‡u Há»“i TÆ° Lá»‡nh BÃ¡nh",
+        Title = "Spawn CakePrince",
         Description = "",
         Default = true
     });
@@ -3500,7 +3500,7 @@ elseif Sea3 then
     };
 end
 local v61 = v16.Main:AddDropdown("DropdownBoss", {
-    Title = "Chá»n TrÃ¹m",
+    Title = "Select Boss",
     Description = "",
     Values = tableBoss,
     Multi = false,
@@ -3511,7 +3511,7 @@ v61:OnChanged(function(v253)
     _G.SelectBoss = v253;
 end);
 local v62 = v16.Main:AddToggle("ToggleAutoFarmBoss", {
-    Title = "Äáº¥m TrÃ¹m",
+    Title = "Farm Boss",
     Description = "",
     Default = false
 });
@@ -3581,7 +3581,7 @@ elseif Sea3 then
     };
 end
 local v64 = v16.Main:AddDropdown("DropdownMaterial", {
-    Title = "Chá»n NguyÃªn Liá»‡u",
+    Title = "Select Material",
     Description = "",
     Values = MaterialList,
     Multi = false,
@@ -3592,7 +3592,7 @@ v64:OnChanged(function(v255)
     SelectMaterial = v255;
 end);
 local v65 = v16.Main:AddToggle("ToggleMaterial", {
-    Title = "CÃ y NguyÃªn Liá»‡u",
+    Title = "Farm Material",
     Description = "",
     Default = false
 });
@@ -3650,7 +3650,7 @@ end);
 if Sea3 then
     local v498 = v16.Sea:AddSection("Äáº£o CÃ¡o");
     local v499 = v16.Sea:AddParagraph({
-        Title = "Tráº¡ng ThÃ¡i Äáº£o CÃ¡o",
+        Title = "Stats Fox Island",
         Content = ""
     });
     function UpdateKitsune()
@@ -3668,7 +3668,7 @@ if Sea3 then
         end);
     end);
     local v500 = v16.Sea:AddToggle("ToggleEspKitsune", {
-        Title = "Äá»‹nh Vá»‹ Äáº£o CÃ¡o",
+        Title = "Esp Fox Island",
         Description = "",
         Default = false
     });
@@ -3712,7 +3712,7 @@ if Sea3 then
         end
     end
     local v501 = v16.Sea:AddToggle("ToggleTPKitsune", {
-        Title = "Bay VÃ´ Äáº£o CÃ¡o",
+        Title = "Fly To Fox Island",
         Description = "",
         Default = false
     });
@@ -3740,7 +3740,7 @@ if Sea3 then
         end
     end);
     local v502 = v16.Sea:AddToggle("ToggleCollectAzure", {
-        Title = "Lá»¥m Linh Há»“n Xanh",
+        Title = "Collect Ghost Green",
         Description = "",
         Default = false
     });
@@ -3761,7 +3761,7 @@ if Sea3 then
     end);
 end
 v16.Sea:AddButton({
-    Title = "Äá»•i Linh Há»“n Xanh",
+    Title = "Trade Ghost Green",
     Description = "",
     Callback = function()
         game:GetService("ReplicatedStorage"):WaitForChild("Modules"):WaitForChild("Net"):WaitForChild("RF/KitsuneStatuePray"):InvokeServer();
@@ -3775,7 +3775,7 @@ if Sea3 then
     local v507 = game:GetService("Workspace");
     local v508 = 350;
     local v509 = v16.Sea:AddSlider("SliderSpeedBoat", {
-        Title = "Tá»‘c Äá»™ Thuyá»n",
+        Title = "Speed Boat",
         Description = "",
         Default = v508,
         Min = 0,
