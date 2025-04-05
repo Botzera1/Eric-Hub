@@ -3787,7 +3787,7 @@ if Sea3 then
     });
     v509:SetValue(v508);
     local v510 = v16.Sea:AddToggle("AutoFindPrehistoric", {
-        Title = "TÃ¬m Äáº£o Dung Nham",
+        Title = "Find Lava Island",
         Description = "",
         Default = false
     });
@@ -3871,8 +3871,8 @@ if Sea3 then
             _G.AutoFindPrehistoric = false;
             if not v513 then
                 v14:Notify({
-                    Title = "Min Gaming",
-                    Content = "Äáº£o Dung Nham TÃ¬m Tháº¥y",
+                    Title = "Eric-Hub",
+                    Content = "Lava Island Found",
                     Duration = 10
                 });
                 v513 = true;
@@ -3881,7 +3881,7 @@ if Sea3 then
         end
     end);
     local v514 = v16.Sea:AddToggle("AutoFindMirage", {
-        Title = "TÃ¬m Äáº£o BÃ­ áº¨n",
+        Title = "Find Mirage Island",
         Description = "",
         Default = false
     });
@@ -3965,8 +3965,8 @@ if Sea3 then
             _G.AutoFindMirage = false;
             if not v513 then
                 v14:Notify({
-                    Title = "Min Gaming",
-                    Content = "Äáº£o BÃ­ áº¨n TÃ¬m Tháº¥y",
+                    Title = "Eric-Hub",
+                    Content = "Mirage Island Found",
                     Duration = 10
                 });
                 v513 = true;
@@ -3975,7 +3975,7 @@ if Sea3 then
         end
     end);
     local v515 = v16.Sea:AddToggle("AutoFindFrozen", {
-        Title = "TÃ¬m Äáº£o Leviathan",
+        Title = "Find Leviathan Island",
         Description = "Cáº§n 5 NgÆ°á»i KhÃ´ng Idk",
         Default = false
     });
@@ -4059,8 +4059,8 @@ if Sea3 then
             _G.AutoFindFrozen = false;
             if not v513 then
                 v14:Notify({
-                    Title = "Min Gaming",
-                    Content = "Äáº£o Leviathan TÃ¬m Tháº¥y",
+                    Title = "Eric-Hub",
+                    Content = "Leviathan Island Found",
                     Duration = 10
                 });
                 v513 = true;
@@ -4069,7 +4069,7 @@ if Sea3 then
         end
     end);
     local v516 = v16.Sea:AddToggle("AutoComeTiki", {
-        Title = "LÃ¡i Thuyá»n Vá» Äáº£o Tiki",
+        Title = "Navigate To Tiki",
         Description = "",
         Default = false
     });
@@ -4111,7 +4111,7 @@ if Sea3 then
         end
     end);
     local v517 = v16.Sea:AddToggle("AutoComeHydra", {
-        Title = "LÃ¡i Thuyá»n Vá» Äáº£o Hydra",
+        Title = "Navigate To Tiki",
         Description = "",
         Default = false
     });
@@ -4153,7 +4153,7 @@ if Sea3 then
         end
     end);
     v16.Sea:AddButton({
-        Title = "Bay Äáº¿n Khu Vá»±c SÄƒn",
+        Title = "Fly To Hunting Area",
         Description = "",
         Callback = function()
             Tween2(CFrame.new(- 16917.154296875, 7.757596015930176, 511.8203125));
@@ -4176,7 +4176,7 @@ if Sea3 then
         "MarineSloop"
     };
     local v519 = v16.Sea:AddDropdown("DropdownBoat", {
-        Title = "Chá»n Thuyá»n",
+        Title = "Select Boat",
         Description = "",
         Values = v518,
         Multi = false,
@@ -4218,21 +4218,21 @@ if Sea3 then
         end
     end);
     v16.Sea:AddButton({
-        Title = "Mua Thuyá»n",
+        Title = "Buy Boat",
         Description = "",
         Callback = function()
             v520(selectedBoat);
         end
     });
     v16.Sea:AddButton({
-        Title = "Bay Äáº¿n Thuyá»n",
+        Title = "Fly to Boat",
         Description = "Duy Nháº¥t Thuyá»n Báº¡n Mua á»ž Chá»— Chá»n",
         Callback = function()
             v521();
         end
     });
     local v522 = v16.Sea:AddToggle("ToggleTerrorshark", {
-        Title = "Äáº¥m CÃ¡ Máº­p",
+        Title = "Punch Terror Shark",
         Description = "",
         Default = false
     });
@@ -4270,7 +4270,7 @@ if Sea3 then
         end
     end);
     local v523 = v16.Sea:AddToggle("TogglePiranha", {
-        Title = "Äáº¥m Piranha",
+        Title = "Punch Piranha",
         Description = "",
         Default = false
     });
@@ -4308,7 +4308,7 @@ if Sea3 then
         end
     end);
     local v524 = v16.Sea:AddToggle("ToggleShark", {
-        Title = "Äáº¥m CÃ¡ Con",
+        Title = "Punch Fish",
         Description = "",
         Default = false
     });
@@ -4350,7 +4350,7 @@ if Sea3 then
         end
     end);
     local v525 = v16.Sea:AddToggle("ToggleFishCrew", {
-        Title = "Äáº¥m TÃ u CÃ¡",
+        Title = "Punch Fish Crew",
         Description = "",
         Default = false
     });
@@ -4392,7 +4392,7 @@ if Sea3 then
         end
     end);
     local v526 = v16.Sea:AddToggle("ToggleShip", {
-        Title = "Äáº¥m TÃ u",
+        Title = "Punch Ship",
         Description = "",
         Default = false
     });
@@ -4435,7 +4435,7 @@ if Sea3 then
         end
     end);
     local v527 = v16.Sea:AddToggle("ToggleGhostShip", {
-        Title = "Äáº¥m TÃ u Ma",
+        Title = "Punch Ghost Ship",
         Description = "",
         Default = false
     });
@@ -4558,7 +4558,7 @@ if Sea3 then
     end);
     local v528 = v16.Main:AddSection("Elite");
     local v529 = v16.Main:AddParagraph({
-        Title = "Tráº¡ng ThÃ¡i Elite",
+        Title = "Stats Elite",
         Content = ""
     });
     spawn(function()
@@ -4573,7 +4573,7 @@ if Sea3 then
         end
     end);
     local v530 = v16.Main:AddToggle("ToggleElite", {
-        Title = "Äáº¥m Elite",
+        Title = "Punch Elite",
         Description = "",
         Default = false
     });
@@ -4624,7 +4624,7 @@ end
 if Sea3 then
     local v531 = v16.Sea:AddSection("Äáº£o BÃ­ áº¨n");
     local v532 = v16.Sea:AddParagraph({
-        Title = "Tráº¡ng ThÃ¡i",
+        Title = "Stats",
         Content = ""
     });
     task.spawn(function()
@@ -4666,7 +4666,7 @@ if Sea3 then
         end);
     end);
     v16.Sea:AddButton({
-        Title = "Bay Äáº¿n Chá»— Cao",
+        Title = "Fly To Shop High",
         Description = "",
         Callback = function()
             TweenToHighestPoint();
@@ -4692,7 +4692,7 @@ if Sea3 then
     end
 end
 local v66 = v16.Sea:AddToggle("ToggleTpAdvanced", {
-    Title = "Bay Äáº¿n Advanced Fruit Dealer",
+    Title = "Fly To Advanced Fruit Dealer",
     Description = "",
     Default = false
 });
@@ -4713,7 +4713,7 @@ spawn(function()
     end
 end);
 local v67 = v16.Sea:AddToggle("ToggleTweenGear", {
-    Title = "Bay Äáº¿n BÃ¡nh RÄƒng",
+    Title = "Fly To Gear",
     Description = "",
     Default = false
 });
@@ -4739,7 +4739,7 @@ spawn(function()
     end);
 end);
 local v68 = v16.Sea:AddToggle("Togglelockmoon", {
-    Title = "NhÃ¬n TrÄƒng VÃ  DÃ¹ng Tá»™c",
+    Title = "Look At The Moon And Use The Race",
     Description = "",
     Default = false
 });
@@ -4920,7 +4920,7 @@ spawn(function()
     end
 end);
 local v72 = v16.ITM:AddToggle("ToggleAutoSaw", {
-    Title = "CÆ°a CÃ¡ Máº­p",
+    Title = "Shark Saw",
     Description = "",
     Default = false
 });
@@ -4962,7 +4962,7 @@ spawn(function()
     end
 end);
 local v73 = v16.ITM:AddToggle("ToggleAutoWarden", {
-    Title = "Kiáº¿m Quáº£n Ngá»¥c",
+    Title = "Warden Sword",
     Description = "",
     Default = false
 });
@@ -5005,7 +5005,7 @@ spawn(function()
 end);
 if Sea3 then
     local v533 = v16.ITM:AddToggle("ToggleHallow", {
-        Title = "LÆ°á»¡i HÃ¡i",
+        Title = "Hallow Sytch",
         Description = "",
         Default = false
     });
@@ -5121,7 +5121,7 @@ if Sea3 then
         end
     end);
     local v536 = v16.ITM:AddToggle("ToggleHoly", {
-        Title = "Äá»‘t Äuá»‘c",
+        Title = "Light the Torch",
         Description = "",
         Default = false
     });
@@ -5206,7 +5206,7 @@ spawn(function()
     end
 end);
 local v76 = v16.ITM:AddToggle("ToggleAutoMusketeerHat", {
-    Title = "MÅ© LÃ­nh Ngá»± LÃ¢m",
+    Title = "Musketeer Hat",
     Description = "",
     Default = false
 });
@@ -5290,7 +5290,7 @@ spawn(function()
     end);
 end);
 local v77 = v16.ITM:AddToggle("ToggleAutoObservationV2", {
-    Title = "Haki Quan SÃ¡t V2",
+    Title = "Haki Observation V2",
     Description = "",
     Default = false
 });
@@ -5338,7 +5338,7 @@ spawn(function()
     end
 end);
 local v78 = v16.ITM:AddToggle("ToggleAutoRainbowHaki", {
-    Title = "Haki 7 MÃ u",
+    Title = "Rainbow Haki",
     Description = "",
     Default = false
 });
@@ -5586,7 +5586,7 @@ spawn(function()
     end
 end);
 local v80 = v16.ITM:AddToggle("ToggleAutoBuddy", {
-    Title = "Kiáº¿m Buddy",
+    Title = "Buddy Sword",
     Description = "",
     Default = false
 });
@@ -5628,7 +5628,7 @@ spawn(function()
     end
 end);
 local v82 = v16.ITM:AddToggle("ToggleAutoDualKatana", {
-    Title = "Song Kiáº¿m",
+    Title = "Cdk",
     Description = "",
     Default = false
 });
@@ -6058,7 +6058,7 @@ spawn(function()
 end);
 if Sea2 then
     local v537 = v16.ITM:AddToggle("ToggleFactory", {
-        Title = "Äáº¥m NhÃ  MÃ¡y",
+        Title = "Punch Factory",
         Description = "",
         Default = false
     });
@@ -6103,7 +6103,7 @@ if Sea2 then
     end);
 end
 local v83 = v16.ITM:AddToggle("ToggleAutoFarmSwan", {
-    Title = "Äáº¥m Swan",
+    Title = "Farm Swan",
     Description = "",
     Default = false
 });
@@ -6185,7 +6185,7 @@ spawn(function()
 end);
 if (Sea2 or Sea3) then
     local v538 = v16.ITM:AddToggle("ToggleHakiColor", {
-        Title = "Mua MÃ u Haki",
+        Title = "Buy Haki Color",
         Description = "",
         Default = false
     });
@@ -6207,7 +6207,7 @@ if (Sea2 or Sea3) then
 end
 if Sea2 then
     local v539 = v16.Main:AddToggle("ToggleSwordLengend", {
-        Title = "Mua Kiáº¿m Huyá»n Thoáº¡i",
+        Title = "Buy Legend Sword",
         Description = "",
         Default = false
     });
@@ -6233,7 +6233,7 @@ if Sea2 then
 end
 if Sea2 then
     local v540 = v16.Main:AddToggle("ToggleEvoRace", {
-        Title = "NÃ¢ng Tá»™c V2",
+        Title = "Race V2",
         Description = "",
         Default = false
     });
@@ -6292,7 +6292,7 @@ if Sea2 then
     end);
 end
 local v85 = v16.Setting:AddToggle("ToggleAutoT", {
-    Title = "Báº­t Tá»™c V3",
+    Title = "Race V3",
     Description = "",
     Default = false
 });
@@ -6310,7 +6310,7 @@ spawn(function()
     end
 end);
 local v86 = v16.Setting:AddToggle("ToggleAutoY", {
-    Title = "Báº­t Tá»™c V4",
+    Title = "Race V4",
     Description = "",
     Default = false
 });
@@ -6330,7 +6330,7 @@ spawn(function()
     end
 end);
 local v87 = v16.Setting:AddToggle("ToggleAutoKen", {
-    Title = "Báº­t Haki Quan SÃ¢t",
+    Title = "Activate Haki Observation",
     Description = "",
     Default = false
 });
@@ -6382,7 +6382,7 @@ end);
 local v89 = require(game.ReplicatedStorage.Util.CameraShaker);
 v89:Stop();
 local v90 = v16.Setting:AddToggle("ToggleBringMob", {
-    Title = "Gom QuÃ¡i",
+    Title = "Bring Mob",
     Description = "",
     Default = true
 });
